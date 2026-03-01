@@ -17,14 +17,15 @@ export default function TabNavigator({ navigation }: any) {
         headerShown: false,
         tabBarStyle: {
           backgroundColor: Colors.primary, // Dark blue background
-          height: 80,
+          // height: 100,
           paddingBottom: 20,
+          paddingTop: 10,
         },
         tabBarActiveTintColor: Colors.secondary,
         tabBarInactiveTintColor: Colors.white,
         tabBarLabelStyle: {
           fontSize: 12,
-          marginTop: -5,
+          marginTop: 16,
         },
       }}
     >
