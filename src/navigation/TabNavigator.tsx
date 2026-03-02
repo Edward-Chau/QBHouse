@@ -17,7 +17,6 @@ export default function TabNavigator({ navigation }: any) {
         headerShown: false,
         tabBarStyle: {
           backgroundColor: Colors.primary, // Dark blue background
-          // height: 100,
           paddingBottom: 20,
           paddingTop: 10,
         },
@@ -34,7 +33,7 @@ export default function TabNavigator({ navigation }: any) {
         component={HomeScreen} 
         options={{
           tabBarLabel: '主頁',
-          tabBarIcon: ({ color ,focused}) => <BottomNavBarIcon iconPath={require('../../assets/icons/home.svg')} iconSize={24} isActive={focused} />,
+          tabBarIcon: ({ focused }) => <BottomNavBarIcon iconPath={require('../../assets/icons/home.svg')} iconSize={24} isActive={focused} />,
         }}
       />
       <Tab.Screen 
@@ -42,7 +41,7 @@ export default function TabNavigator({ navigation }: any) {
         component={HaircutScreen} 
         options={{
           tabBarLabel: '剪髮',
-          tabBarIcon: ({ color ,focused}) => <Feather name="scissors" size={24} color={color} />,
+          tabBarIcon: ({ focused }) => <BottomNavBarIcon iconPath={require('../../assets/icons/home.svg')} iconSize={24} isActive={focused} />,
         }}
       />
       <Tab.Screen 
@@ -50,7 +49,7 @@ export default function TabNavigator({ navigation }: any) {
         component={MoreScreen}
         options={{
           tabBarLabel: '更多',
-          tabBarIcon: ({ color }) => <Feather name="more-horizontal" size={24} color={color} />,
+          tabBarIcon: ({ focused }) => <BottomNavBarIcon iconPath={require('../../assets/icons/home.svg')} iconSize={24} isActive={focused} />,
         }}
         listeners={{
           tabPress: (e) => {
