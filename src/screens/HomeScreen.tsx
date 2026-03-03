@@ -8,6 +8,9 @@ export default function HomeScreen() {
     <View style={styles.container}>
       <HomeScreenHeader />
       <Text style={styles.text}>Home Screen</Text>
+      <Text style={styles.text}>Home Screen</Text>
+      <Text style={styles.text}>Home Screen</Text>
+      <Text style={styles.text}>Home Screen</Text>
     </View>
   );
 }

@@ -14,9 +14,9 @@ export default function App() {
     <SafeAreaProvider>
       <GestureHandlerRootView style={styles.container}>
         <StatusBar style="auto" />
-        <SafeAreaView style={styles.container}>
+        <View style={styles.container}>
           <DrawerNavigator />
-        </SafeAreaView>
+        </View>
       </GestureHandlerRootView>
     </SafeAreaProvider>
   );
