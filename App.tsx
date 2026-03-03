@@ -11,12 +11,14 @@ import {
 
 export default function App() {
   return (
-    <GestureHandlerRootView style={styles.container}>
-      <StatusBar style="auto" />
-      <SafeAreaView style={styles.container}>
-        <DrawerNavigator />
-      </SafeAreaView>
-    </GestureHandlerRootView>
+    <SafeAreaProvider>
+      <GestureHandlerRootView style={styles.container}>
+        <StatusBar style="auto" />
+        <SafeAreaView style={styles.container}>
+          <DrawerNavigator />
+        </SafeAreaView>
+      </GestureHandlerRootView>
+    </SafeAreaProvider>
   );
 }
 
